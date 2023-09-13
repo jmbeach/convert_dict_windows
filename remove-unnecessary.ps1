@@ -1,18 +1,18 @@
-[string]$correctOutput = ./out/convert_dict.exe
+[string]$correctOutput = ./convert_dict.exe
 
 New-Item -ItemType Directory -Force ./tmp
-$dontDelete = @('convert_dict.exe', 'icudtl.dat')
+$dontDelete = @('convert_dict.exe', 'icudtl.dat', 'README.md', 'remove-unnecessary.ps1', 'tmp')
 
-Get-ChildItem ./out | ForEach-Object {
+Get-ChildItem . | ForEach-Object {
   $file = $_
   if ($file.Name -in $dontDelete) {
     return
   }
 
   Move-Item $file ./tmp
-  [string]$output = ./out/convert_dict.exe
+  [string]$output = ./convert_dict.exe
   if ($output -ne $correctOutput) {
-    Move-Item "./tmp/$($file.Name)" ./out
+    Move-Item "./tmp/$($file.Name)" ./
   }
 }
 
