@@ -5,6 +5,7 @@ $dontDelete = @(
   'convert_dict.exe',
   'icudtl.dat',
   'msvcp140.dll',
+  'msvcp140d.dll',
   'README.md',
   'remove-unnecessary.ps1',
   'tmp',
