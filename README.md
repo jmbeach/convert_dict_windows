@@ -1,6 +1,6 @@
 *This README is largely taken from [jankelemen](https://github.com/jankelemen/convert-dict-tool-from-chromium)'s equivalent repo for Linux*
 
-This repo contains binaries compiled for Windows, which are necessary to run `convert_dict`. `Convert_dict` is a tool that compiles hunspell dictionary files (`.dic`, `.aff` and `.dic_delta`) into one binary `.bdic` dictionary, which Chromium based browsers use for spell checking. All the binaries combined are around 42MB
+This repo contains binaries compiled for Windows, which are necessary to run `convert_dict`. `Convert_dict` is a tool that compiles hunspell dictionary files (`.dic`, `.aff` and `.dic_delta`) into one binary `.bdic` dictionary, which Chromium based browsers use for spell checking. All the binaries combined are around 45MB
 
 You can learn more about `.dic`, `.aff` and `.dic_delta` files [here](https://www.chromium.org/developers/how-tos/editing-the-spell-checking-dictionaries)
 
