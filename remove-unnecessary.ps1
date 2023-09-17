@@ -1,7 +1,7 @@
 [string]$correctOutput = ./convert_dict.exe
 
 New-Item -ItemType Directory -Force ./tmp
-$dontDelete = @('convert_dict.exe', 'icudtl.dat', 'README.md', 'remove-unnecessary.ps1', 'tmp', 'vcruntime140.dll')
+$dontDelete = @('convert_dict.exe', 'icudtl.dat', 'README.md', 'remove-unnecessary.ps1', 'tmp', 'vcruntime140.dll', , 'vcruntime140d.dll')
 
 Get-ChildItem . | ForEach-Object {
   $file = $_
