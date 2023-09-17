@@ -4,6 +4,7 @@ New-Item -ItemType Directory -Force ./tmp
 $dontDelete = @(
   'convert_dict.exe',
   'icudtl.dat',
+  'msvcp140.dll',
   'README.md',
   'remove-unnecessary.ps1',
   'tmp',
